@@ -44,8 +44,8 @@ public class E1SwitchClassTest {
     }
 
     @Test
-    void testMoazzam() {
-        String simulatedInput = "Moazzam\n";
+    void testSohail() {
+        String simulatedInput = "Sohail\n";
         System.setIn(new ByteArrayInputStream(simulatedInput.getBytes()));
 
         E1SwitchClass.main(new String[]{});
@@ -58,8 +58,8 @@ public class E1SwitchClassTest {
     }
 
     @Test
-    void testWeqas() {
-        String simulatedInput = "Weqas\n";
+    void testMoazzam() {
+        String simulatedInput = "Moazzam\n";
         System.setIn(new ByteArrayInputStream(simulatedInput.getBytes()));
 
         E1SwitchClass.main(new String[]{});
