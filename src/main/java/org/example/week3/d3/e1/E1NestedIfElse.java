@@ -2,7 +2,8 @@ package org.example.week3.d3.e1;
 
 public class E1NestedIfElse {
     public static void main(String[] args) {
-
+     int age = 14;
+        int height = 125;
 
         // Check if age is greater than or equal to 12
         if (age >= 12) {
