@@ -1,21 +1,38 @@
-package org.example.week2.d5.e2;
+ package org.example.week3.d5.e2;
 
-public class E2ElseIf {
+import java.util.Scanner;
+
+public class E2SwitchClass {
     public static void main(String[] args) {
-        // Declare a variable for temperature and assign a value
+        // Create a Scanner object
+        Scanner input = new Scanner(System.in);
 
+        // Prompt user to enter meal type
+        System.out.println("Enter the type of meal (1 for breakfast, 2 for lunch, 3 for dinner)");
+        int mealType = input.nextInt();
 
-        // Use if-else-if statements to check the value of temperature and print a message based on the following conditions:
+        // Initialize a variable for price
+        double price;
 
-        // If temperature is 30 or above, print "It's hot outside.".
+        // Use switch to determine the price
+        switch (mealType) {
+            case 1:
+                price = 5.0;
+                System.out.println("The price of your meal is $" + price);
+                break;
+            case 2:
+                price = 10.0;
+                System.out.println("The price of your meal is $" + price);
+                break;
+            case 3:
+                price = 15.0;
+                System.out.println("The price of your meal is $" + price);
+                break;
+            default:
+                System.out.println("Invalid meal type entered");
+        }
 
-        // If temperature is 20 or above, but less than 30, print "It's warm outside.".
-
-        // If temperature is 10 or above, but less than 20, print "It's cool outside.".
-
-        // If temperature is less than 10, print "It's cold outside.".
-
-
-
+        // Close the Scanner
+        input.close();
     }
 }
