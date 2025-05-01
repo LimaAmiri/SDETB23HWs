@@ -2,7 +2,32 @@ package org.example.week3.d3.e4;
 
 public class E4NestedIfAndScanner {
     public static void main(String[] args) {
+     Scanner input = new Scanner(System.in);
 
+        
+        System.out.println("Please enter your coffee budget:");
+        double budget = input.nextDouble();
+        input.nextLine(); // Consume newline left by nextDouble()
+
+        
+        System.out.println("Do you prefer your coffee strong?");
+        String preference = input.nextLine();
+
+        
+        if (budget >= 5.00) {
+            if (preference.equalsIgnoreCase("strong")) {
+                System.out.println("You should try an Espresso!");
+            } else {
+                System.out.println("You should try a Latte!");
+            }
+        } else {
+            System.out.println("You might enjoy a simple cup of Instant Coffee!");
+        }
+
+        // Step 5: Close the Scanner
+        input.close();
+    }
+}
 
 
 // Coffee Drink Recommendation Checker - Step-by-Step Guide
@@ -31,6 +56,3 @@ public class E4NestedIfAndScanner {
 //
 // Reminder:
 //   - Follow these steps and try writing the code yourself. Understand each part rather than copying everything directly.
-
-    }
-}
